@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uwb.findafriendapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".classes.App"
+        android:allowBackup="true"
+        android:icon="@drawable/find_friends_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/find_friends_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".EventChatActivity"></activity>
+        <activity android:name=".InvitationsActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".EventParticipantsActivity" />
+        <activity android:name=".ExpandedProfileInterestsActivity" />
+        <activity android:name=".ExpandedEventActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".ExpandedProfileActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".CreateEventActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".InterestsActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Notifications.MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Notifications.MyFirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".classes.AlertReceiver" />
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "969783254204",
+    "firebase_url": "https://findafriend-app.firebaseio.com",
+    "project_id": "findafriend-app",
+    "storage_bucket": "findafriend-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969783254204:android:b5c6b719ece146ee4704b9",
+        "android_client_info": {
+          "package_name": "com.uwb.findafriendapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969783254204-a64j9sajvfjbi4uh034pjn3n4q4i79cq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnhvl8nCMJ13r58Hz6PuMHhgCW02wllxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969783254204-a64j9sajvfjbi4uh034pjn3n4q4i79cq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
